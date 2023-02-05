@@ -1,0 +1,79 @@
+
+/* Your CSS Here */
+*{
+  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+main {
+  text-align: center;
+}
+
+.home-page , .home-page a{
+  margin: 20px 0;
+  color: white;
+}
+
+body{
+  background-color: #131313;
+}
+
+.album-page h3{
+  font-size: 30px;
+color: #72AC51;
+}
+
+.album-page{
+  padding: 30px 0;
+}
+
+.album-page .album-collection{
+  color: #A6A6A6;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+
+.album-page .album-collection >div{
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  background-color: #252525;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+}
+
+.album-page .album-collection >div div:nth-child(1){
+ flex: 1;
+}
+
+.album-page .album-collection >div div:nth-child(2) div{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+ }
+
+.album-page .album-collection >div h4,.album-page .album-collection >div p{
+ margin: 10px 0;
+ text-align: left;
+}
+
+h4{
+  color: white;
+  font-size: 20px;
+
+}
+  
+  @media (min-width : 500px) {
+    .album-page .album-collection >div div:nth-child(1){
+      width: 40%;
+     }
+     .album-page .album-collection >div div:nth-child(2){
+      width: 60%;
+     }
+  }
